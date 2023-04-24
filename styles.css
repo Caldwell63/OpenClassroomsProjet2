@@ -1,3 +1,64 @@
 body{
 font-family: 'Raleway', sans-serif;
+margin: 0px;
+}
+
+header{
+    padding: 0px;
+}
+
+.a logo{
+position: absolute;
+width: 61.09px;
+height: 19px;
+margin-left: 30px;
+margin-top: 30px;
+background: transparent;
+}
+
+nav{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 0px;
+margin: 0px 30px;
+gap: 68px;
+justify-content: space-between;
+}
+
+.btn{
+padding-top: 30px;
+padding-bottom: 30px;
+align-items: center;
+}
+
+.btnH{
+margin-right: 15px;
+border-top: 2px transparent;
+text-decoration:none;
+color: black;
+}
+
+.btnA{
+border-top: 2px transparent;
+text-decoration:none;
+color: black;
+}
+
+.btnH:hover{
+border-top: 2px #0065FC solid ;
+font-size: 16px;
+font-weight: 400;
+row-gap: 30px;
+padding-top: 28px;
+color: #0065FC;
+}
+
+.btnA:hover{
+border-top: 2px #0065FC solid ;
+font-size: 16px;
+font-weight: 400;
+row-gap: 30px;
+padding-top: 28px;
+color: #0065FC;
 }
