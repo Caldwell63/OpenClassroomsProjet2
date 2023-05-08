@@ -1,6 +1,7 @@
 body{
 font-family: 'Raleway', sans-serif;
-margin: 0px;
+margin: 30px;
+/* display: flexbox; */
 }
 
 /* Navbar */
@@ -378,6 +379,30 @@ flex-grow: 0;
 z-index: 3;
 }
 
+.info p{
+width: 1306px;
+height: 19px;
+    
+/* Information */
+    
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+    
+    
+color: #000000;
+    
+    
+/* Inside auto layout */
+    
+flex: none;
+order: 1;
+flex-grow: 1;
+}
+
 .icon{
 width: 24px;
 height: 24px;
@@ -416,7 +441,7 @@ width: 4px;
 height: 10px;
 }
 
-.cards{
+.cards{ 
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -424,7 +449,7 @@ padding: 0px;
 gap: 40px;
 
 width: 1340px;
-height: 614px;
+height: 611.5px;
 
 
 /* Inside auto layout */
@@ -433,6 +458,30 @@ flex: none;
 order: 1;
 align-self: stretch;
 flex-grow: 0;
+}
+
+
+.HbgM{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 30px;
+gap: 30px;
+    
+width: 811px;
+height: 611.5px;
+    
+/* Grey */
+    
+background: #F2F2F2;
+border-radius: 15px;
+    
+/* Inside auto layout */
+    
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
 }
 
 .HbgM h1{
@@ -446,19 +495,21 @@ font-style: normal;
 font-weight: 700;
 font-size: 22px;
 line-height: 26px;
+
 /* identical to box height */
-    
+
+margin: auto auto 0px auto;
 color: #000000;
     
 /* Inside auto layout */
     
-flex: none;
+ flex: none;
 order: 0;
 align-self: stretch;
 flex-grow: 0;
 }
 
-.HbgM h2{
+ .HbgM h2{
 width: 811px;
 height: 21px;
     
@@ -479,30 +530,7 @@ flex: none;
 order: 3;
 align-self: stretch;
 flex-grow: 0;
-}
-
-.HbgM{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 30px;
-gap: 35px;
-
-width: 871px;
-height: 614px;
-
-/* Grey */
-
-background: #F2F2F2;
-border-radius: 15px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 1;
-}
+} 
 
 .container1{
 display: flex;
@@ -510,13 +538,13 @@ flex-direction: row;
 align-items: flex-start;
 padding: 0px;
 gap: 30px;
-
+    
 width: 811px;
 height: 207.25px;
-
-
+    
+    
 /* Inside auto layout */
-
+    
 flex: none;
 order: 1;
 align-self: stretch;
@@ -527,7 +555,6 @@ flex-grow: 0;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 0px 0px 15px;
 gap: 4px;
 
 width: 250.33px;
@@ -546,35 +573,340 @@ order: 0;
 flex-grow: 1;
 }
 
+#card1 img{
+    box-sizing: border-box;
+
+    width: 250.33px;
+    height: 124px;
+    
+    /* background: url(fred-kleber-gTbaxaVLvsg-unsplash); */
+    /* White */
+    
+    /* border: 5px solid #FFFFFF; */
+    border-radius: 20px 20px 0px 0px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte1{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+/* padding: 0px 15px; */
+gap: 8px;
+
+width: 250.33px;
+height: 64.25px;
 
 
-#card1 h1{
-width: 220.33px;
-height: 19px;
-
-/* Card/Title */
-
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */
-
-
-color: #000000;
-margin-top: 4px;
-margin-bottom: 8px;
-margin-left: 15px;
 /* Inside auto layout */
 
 flex: none;
-order: 0;
+order: 1;
 align-self: stretch;
 flex-grow: 0;
 }
 
-#card1 h2{
+.texte1 h1{
+    width: 220.33px;
+    height: 19px;
+    
+    /* Card/Title */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    margin: 0px;
+    /* padding-left: 15px; */
+    color: #000000;
+    padding-left: 15px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte1 h2{
+    width: 220.33px;
+    height: 16px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
+    margin: 0px;
+    padding-left: 15px;
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    
+    width: 250.33px;
+    height: 207.25px;
+    
+    background: #FFFFFF;
+    /* Shadow/Card */
+    
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    }
+
+
+#card2 img{
+        box-sizing: border-box;
+    
+        width: 250.33px;
+        height: 124px;
+        
+        /* background: url(fred-kleber-gTbaxaVLvsg-unsplash); */
+        /* White */
+        
+        /* border: 5px solid #FFFFFF; */
+        border-radius: 20px 20px 0px 0px;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+}
+    
+.texte2{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+/* padding: 0px 15px; */
+gap: 8px;
+
+width: 250.33px;
+height: 64.25px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.texte2 h1{
+        width: 220.33px;
+        height: 19px;
+        
+        /* Card/Title */
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+     
+        
+        /* padding-left: 15px; */
+        margin: 0px;
+        padding-left: 15px;
+        color: #000000;
+        
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+    .texte2 h2{
+        width: 220.33px;
+        height: 16px;
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        
+        color: #000000;
+        /* padding-left: 15px; */
+        margin: 0px 0px 0px 0px;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+#card3{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 4px;
+        
+width: 250.33px;
+height: 207.25px;
+        
+background: #FFFFFF;
+/* Shadow/Card */
+        
+box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+        
+/* Inside auto layout */
+        
+flex: none;
+order: 2;
+flex-grow: 1;
+}
+
+        #card3 img{
+            box-sizing: border-box;
+        
+            width: 250.33px;
+            height: 124px;
+            
+            /* background: url(fred-kleber-gTbaxaVLvsg-unsplash); */
+            /* White */
+            
+            /* border: 5px solid #FFFFFF; */
+            border-radius: 20px 20px 0px 0px;
+            
+            /* Inside auto layout */
+            
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
+    }
+
+.texte3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    
+    width: 250.33px;
+    height: 64.25px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+    .texte3 h1{
+        width: 220.33px;
+        height: 19px;
+        
+        /* Card/Title */
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        
+        
+        color: #000000;
+        margin: 0px;
+        padding-left: 15px;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+    .texte3 h2{
+        width: 220.33px;
+        height: 16px;
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        
+        color: #000000;
+        margin: 0px;
+        padding-left: 15px;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+/* #card1 h1{
+width: 220.33px;
+height: 19px; */
+
+/* Card/Title */
+
+/* font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px; */
+/* identical to box height */
+
+/* 
+color: #000000;
+margin-top: 4px;
+margin-bottom: 8px;
+margin-left: 15px; */
+/* Inside auto layout */
+
+/* flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+} */
+
+/* #card1 h2{
     
 width: 220.33px;
 height: 16px;
@@ -585,99 +917,355 @@ font-weight: 400;
 font-size: 14px;
 line-height: 16px;
 
-color: #000000;
+color: #000000; */
 
 
 /* Inside auto layout */
 
-flex: none;
+/* flex: none;
 order: 1;
 align-self: stretch;
 flex-grow: 0;
 margin-left: 15px;
 margin-top: 0px;
-}
+} */
 
-.stars{
-display: flex;
+/* .stars{ */
+/* display: flex;
 justify-content: flex-start;
 width: 90px;
 height: 13.25px;
 
 /* Inside auto layout */
 
-flex: none;
+/* flex: none;
 order: 1;
-flex-grow: 0; 
-} 
+flex-grow: 0;   */
+/* width: 81px;
+height: 13.25px; */
+/* gap: 3px; */
+/* Inside auto layout */
+/* padding-left: 15px;
+padding-right: 2.38px;
+flex: none;
+order: 2;
+flex-grow: 0;
+}  */
 
+.icon{
+width: 14.29px;
+height: 13.25px;
+padding-right: 4.38px;
+}
 .fa-solid.fa-star{
 padding: 0px;   
-height: 13.25px;
-width: 14.29px;
+/* height: 13.25px;
+width: 14.29px; */
+color: #0065FC;
+/* margin-right: 2.38px; */
 }
 
-.cardsrow2{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 30px;
+#grey-star.fa-solid.fa-star{
+color: #F2F2F2;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
     
-width: 811px;
-height: 207.25px;
+    width: 811px;
+    height: 207.25px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#card4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    
+    width: 250.33px;
+    height: 207.25px;
+    
+    background: #FFFFFF;
+    /* Shadow/Card */
+    
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#card4 img{
+    box-sizing: border-box;
+
+    width: 250.33px;
+    height: 124px;
+    
+    /* background: url(annie-spratt-Eg1qcIitAuA-unsplash.jpg); */
+    /* White */
+    
+    /* border: 5px solid #FFFFFF; */
+    border-radius: 20px 20px 0px 0px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte4{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    
+    width: 250.33px;
+    height: 64.25px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte4 h1{
+width: 220.33px;
+height: 19px;
+    
+/* Card/Title */
+    
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+margin-top: 0px;
+margin-left: 15px;
+margin-bottom: 0px;
+color: #000000;
     
 /* Inside auto layout */
     
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
-}
-
-.row2{
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 30px;
-    
-width: 811px;
-height: 207.25px;
-    
-/* Inside auto layout */
-    
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0;
-}
-
-#card2{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px 0px 15px;
-gap: 4px;
-
-width: 250.33px;
-height: 207.25px;
-background: #FFFFFF;
-/* Shadow/Card */
-
-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-border-radius: 20px;
-
-/* Inside auto layout */
-
 flex: none;
 order: 0;
-flex-grow: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.texte4 h2{
+width: 220.33px;
+height: 16px;
+    
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+margin-top: 0px;
+margin-left: 15px;
+margin-bottom: 0px;
+
+color: #000000;
+     
+/* Inside auto layout */
+    
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
 }
 
 
+#card5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    
+    width: 250.33px;
+    height: 207.25px;
+    
+    background: #FFFFFF;
+    /* Shadow/Card */
+    
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
 
-#card2 h1{
+#card5 img{
+    box-sizing: border-box;
+
+    width: 250.33px;
+    height: 124px;
+    
+    /* background: url(annie-spratt-Eg1qcIitAuA-unsplash.jpg); */
+    /* White */
+    
+    /* border: 5px solid #FFFFFF; */
+    border-radius: 20px 20px 0px 0px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    
+    width: 250.33px;
+    height: 64.25px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte5 h1{
+    width: 220.33px;
+    height: 19px;
+        
+    /* Card/Title */
+        
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    color: #000000;
+        
+    /* Inside auto layout */
+        
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte5 h2{
+    width: 220.33px;
+    height: 16px;
+        
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    
+    color: #000000;
+         
+    /* Inside auto layout */
+        
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#card6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    
+    width: 250.33px;
+    height: 207.25px;
+    
+    background: #FFFFFF;
+    /* Shadow/Card */
+    
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 1;
+}
+
+#card6 img{
+    box-sizing: border-box;
+
+    width: 250.33px;
+    height: 124px;
+    
+    /* background: url(annie-spratt-Eg1qcIitAuA-unsplash.jpg); */
+    /* White */
+    
+    /* border: 5px solid #FFFFFF; */
+    border-radius: 20px 20px 0px 0px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte6{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    
+    width: 250.33px;
+    height: 64.25px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.texte6 h1{
 width: 220.33px;
 height: 19px;
     
@@ -692,7 +1280,7 @@ line-height: 19px;
 margin: 0px;
 margin-top: 4px;
 margin-left: 15px;
-margin-bottom: 8px;
+/* margin-bottom: 8px; */
 color: #000000;
     
 /* Inside auto layout */
@@ -703,26 +1291,50 @@ align-self: stretch;
 flex-grow: 0;
 }
 
-#card2 h2{
-width: 220.33px;
-height: 16px;
+.texte6 h2{
+    width: 220.33px;
+    height: 16px;
+        
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
     
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-margin-top: 8;
-margin-left: 15px;
+    color: #000000;
+         
+    /* Inside auto layout */
+        
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
 
-color: #000000;
-     
-/* Inside auto layout */
+.HbgM h2{
+    width: 811px;
+    height: 21px;
     
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+    /* Title/Filter */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .stars{
@@ -730,7 +1342,8 @@ display: flex;
 justify-content: flex-start;
 width: 90px;
 height: 13.25px;
-    
+padding-left: 15px;    
+
 /* Inside auto layout */
     
 flex: none;
@@ -738,35 +1351,35 @@ order: 2;
 flex-grow: 0; 
 } 
 
-.cards h3{
+/* .cards h3{
 
 width: 811px;
 height: 21px;
     
 /* Title/Filter */
     
-font-family: 'Raleway';
+/* font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 21px;
     
-color: #000000;
+color: #000000; */
      
 /* Inside auto layout */
     
-flex: none;
+/* flex: none;
 order: 3;
 align-self: stretch;
 flex-grow: 0;
-}
+} */
 
 .pop{
 display: flex;
 flex-direction: column;
 align-items: center;
 padding: 30px;
-margin-right: 50px;
+/* margin-right: 50px; */
 gap: 30px;
 
 width: 429px;
@@ -798,34 +1411,50 @@ flex-grow: 0;
 }
 
 .title h1{
-/* flex: ; */
 position: relative;
 width: 300.31px;
 height: 26px;
 left: 0px;
 top: 0px;
-    
+
 /* Title/Section */
-    
+
 font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 22px;
 line-height: 26px;
 /* identical to box height */
-    
+
 color: #000000;
 }
 
+.graph{
+    position: relative;
+    width: 18px;
+    height: 15.75px;
+    right: -0.13px;
+    top: calc(50% - 15.75px/2 - 0.12px);
+}
+
 .fa-solid.fa-chart-line{
-position: relative;
+/* position: relative;
 width: 18px;
 height: 15.75px; 
 padding-top: 0px;
-padding-left: 50.83px;
+padding-left: 50.83px; */
+position: relative;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+/* Blue */
+
+background: #0065FC;
 }
 
-#popu{
+.container3{
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -843,114 +1472,348 @@ align-self: stretch;
 flex-grow: 0;
 }
 
-#popu{
-width: 369px;
-height: 144px;
+#card7{
+    width: 369px;
+    height: 144px;
     
-background: #FFFFFF;
-/* Shadow/Card */
+    background: #FFFFFF;
+    /* Shadow/Card */
     
-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
     
-/* Inside auto layout */
+    /* Inside auto layout */
     
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+} 
+
+#card7 img{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 123px;
+    height: 144px;
+    left: 0px;
+    top: 0px;
+    
+    /* background: url(emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); */
+    /* White */
+    
+    border-width: 5px 0px 5px 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
 }
 
-.rectangle img{
-box-sizing: border-box;
-
-position: relative;
-width: 123px;
-height: 144px;
-left: 0px;
-top: 0px;
+.texte7{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px 5px 15px;
+    gap: 24px;
     
-/* background: url(emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); */
-/* White */
-    
-border-width: 5px 0px 5px 5px;
-border-style: solid;
-border-color: #FFFFFF;
-border-radius: 20px 0px 0px 20px;
+    position: relative;
+    width: 246px;
+    height: 134px;
+    left: 123px;
+    top: 5px;
 }
 
-.infos{
-display: flex;
-flex-direction: column;
-/* align-items: flex-start; */
-padding: 10px 5px 5px 15px;
-gap: 24px;
+.infosp7{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
     
-position: relative;
-width: 246px;
-height: 134px;
-left: 123px;
-top: 5px;
+    width: 226px;
+    height: 83px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
 }
 
-.texte{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 5px;
+.infosp7 h1{
+    width: 226px;
+    height: 19px;
     
-width: 226px;
-height: 83px;
+    /* Card/Title */
     
-/* Inside auto layout */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
     
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 1;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
-.texte h1{
-width: 226px;
-height: 19px;
+.infosp7 h2{
+    width: 226px;
+    height: 16px;
     
-/* Card/Title */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
     
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-/* identical to box height */ 
+    color: #000000;
     
-color: #000000;
     
-/* Inside auto layout */
+    /* Inside auto layout */
     
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
-.texte h2{
-width: 226px;
-height: 16px;
+#card8{
+    width: 369px;
+    height: 144px;
     
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
+    background: #FFFFFF;
+    /* Shadow/Card */
     
-color: #000000;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
     
+    /* Inside auto layout */
     
-/* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+} 
+
+#card8 img{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 123px;
+    height: 144px;
+    left: 0px;
+    top: 0px;
     
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+    /* background: url(emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); */
+    /* White */
+    
+    border-width: 5px 0px 5px 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
 }
+
+.texte8{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px 5px 15px;
+    gap: 24px;
+    
+    position: relative;
+    width: 246px;
+    height: 134px;
+    left: 123px;
+    top: 5px;
+}
+
+.infosp8{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    
+    width: 226px;
+    height: 83px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.infosp8 h1{
+    width: 226px;
+    height: 19px;
+    
+    /* Card/Title */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.infosp8 h2{
+    width: 226px;
+    height: 16px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#card9{
+    width: 369px;
+    height: 144px;
+    
+    background: #FFFFFF;
+    /* Shadow/Card */
+    
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+} 
+
+#card9 img{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 123px;
+    height: 144px;
+    left: 0px;
+    top: 0px;
+    
+    /* background: url(emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); */
+    /* White */
+    
+    border-width: 5px 0px 5px 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.texte9{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 5px 5px 15px;
+    gap: 24px;
+    
+    position: relative;
+    width: 246px;
+    height: 134px;
+    left: 123px;
+    top: 5px;
+}
+
+.infosp9{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    
+    width: 226px;
+    height: 83px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.infosp9 h1{
+    width: 226px;
+    height: 19px;
+    
+    /* Card/Title */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.infosp9 h2{
+    width: 226px;
+    height: 16px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
