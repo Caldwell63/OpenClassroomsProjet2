@@ -1794,7 +1794,7 @@ flex-grow: 0;
     flex-grow: 0;
 }
 
-.container3{
+.container4{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1813,7 +1813,7 @@ flex-grow: 0;
     flex-grow: 0;
 }
 
-.container3 h1{
+.container4 h1{
     width: 1280px;
     height: 30.02px;
     
@@ -2176,5 +2176,319 @@ flex-grow: 0;
     flex: none;
     order: 0;
     align-self: stretch;
+    flex-grow: 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    
+    width: 1340px;
+    height: 163px;
+    
+    /* Grey */
+    
+    background: #F2F2F2;
+    
+    /* Inside auto layout */
+    padding-left: 5Opx;
+    padding-right: 50px;
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.propos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+    
+    width: 446.67px;
+    height: 163px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.propos h1{
+    width: 77px;
+    height: 21px;
+    
+    /* Title/Filter */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.propos h2{
+    width: 176px;
+    height: 19px;
+    
+    /* Footer/Link */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.propos h3{
+    width: 157px;
+    height: 19px;
+    
+    /* Footer/Link */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    
+}
+
+.propos h4{
+    width: 194px;
+    height: 19px;
+    
+    /* Footer/Link */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.hebergements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+    
+    width: 446.67px;
+    height: 163px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;   
+}
+
+.hebergements h1{
+    width: 165px;
+    height: 21px;
+    
+    /* Title/Filter */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.hebergements h2{
+    width: 104px;
+    height: 19px;
+    
+    /* Footer/Link */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.hebergements h3{
+    width: 150px;
+    height: 19px;
+    
+    /* Footer/Link */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.assistance{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 15px;
+    
+    width: 446.67px;
+    height: 163px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.assistance h1{
+    width: 93px;
+    height: 21px;
+    
+    /* Title/Filter */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.assistance h2{
+    width: 97px;
+    height: 19px;
+    
+    /* Footer/Link */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.assistance h3{
+    width: 114px;
+    height: 19px;
+    
+    /* Footer/Link */
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
     flex-grow: 0;
 }
