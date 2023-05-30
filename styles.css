@@ -1,58 +1,39 @@
+
+
 * {
     margin: 0;
-    /* padding: 0;
-    box-sizing: border-box; */
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    margin: 0px;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
     background: #FFFFFF;
+    /* height: 100%; */
 }
 
 /* Navbar */
 header {
     height: 79px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    padding: 0px 50px;
 }
 
 /* New */
 .logo {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 30px 30px 0px;
     gap: 10px;
-    position: absolute;
     left: 0px;
-    top: 0px;
-}
-
-.a logo {
-    height: 19px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+    top: 0px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 30px 30px 0px;
 }
 
 nav {
-
-    display: flex;
+    
+    /* display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px 25px;
@@ -60,8 +41,14 @@ nav {
     height: 35px;
     right: 0.31px;
     top: 0px;
-    align-items: flex-end;
+    align-items: flex-end; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
 }
+
 
 .btn {
     display: flex;
@@ -70,9 +57,6 @@ nav {
     align-items: flex-end;
     gap: 68px;
     height: 35px;
-    margin-top: 16px;
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -84,10 +68,10 @@ nav {
     text-decoration: none;
     color: black;
     height: 35px;
-    padding-top: 14px;
-
+    padding-top: 16px;
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -99,7 +83,7 @@ nav {
     text-decoration: none;
     color: black;
     height: 35px;
-    padding-top: 14px;
+    padding-top: 16px;
     /* Inside auto layout */
 
     flex: none;
@@ -127,7 +111,11 @@ nav {
 
 /* Filters */
 
+.wrapper-main{
+    width: 100%;
+}
 main{
+    display: block;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
@@ -153,7 +141,7 @@ main{
     align-items: center;
     padding: 0px;
     gap: 24px;
-
+    
     width: 377px;
     height: 49px;
     margin-bottom: 35px;
@@ -167,7 +155,7 @@ main{
 }
 
 .grey-square {
-    /* width: 50px; */
+  
     height: 49px;
     left: 0px;
     top: 0px;
@@ -175,22 +163,23 @@ main{
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
- 
+
 .grey-square img{
     height: 48px;
 }
 .fa-solid {
-    /* width: 14px; */
+    
     height: 18px;
-    padding-top: 15px;
-    padding-left: 18px;
+    /* padding-top: 15px;
+    padding-left: 18px; */
+    color: #0065FC;
 }
 
 .input {
     border: none;
     outline: none;
     color: black;
-    /* width: 147px; */
+    
     height: 21px;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
@@ -207,7 +196,7 @@ main{
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    /* width: 132px; */
+
     height: 49px;
 
     /* Blue */
@@ -217,14 +206,17 @@ main{
     color: #ffffff;
     border: 1px solid #0065FC;
     border-radius: 0px 16px 16px 0px;
-
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 2;
     flex-grow: 0;
 }
 
+.search-bar img{
+    visibility: hidden;
+}
 button {
     padding-left: 16px;
     padding-right: 16px;
@@ -233,9 +225,9 @@ button {
 }
 
 .filter-bar h1 {
-    /* width: 54px; */
+    
     height: 21px;
-
+    
     /* Title/Filter */
 
     font-family: 'Raleway';
@@ -247,7 +239,7 @@ button {
 
     color: #000000;
     /* Inside auto layout */
-
+    
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -264,7 +256,7 @@ button {
     padding-bottom: 37.5px;
     gap: 15px;
 
-    /* width: 758px; */
+  
     height: 50px;
 
     /* Inside auto layout */
@@ -282,25 +274,25 @@ button {
 
 .price {
     box-sizing: border-box;
-
+    
     /* Auto layout */
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 4px 19px;
     gap: 10px;
-
-    /* width: 173px; */
+    
+    
     height: 50px;
     /* Grey/Tint2 */
-
+    
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     font-weight: 700;
     font-size: 17px;
     /* Inside auto layout */
-
+    
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -317,20 +309,20 @@ button {
 
 .number {
     box-sizing: border-box;
-
+    
     /* Auto layout */
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 4px 19px;
     gap: 10px;
 
-    /* width: 173px; */
+   
     height: 50px;
 
     /* Grey/Tint2 */
-
+    
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     font-weight: 700;
@@ -353,7 +345,7 @@ button {
 
 .type {
     box-sizing: border-box;
-
+    
     /* Auto layout */
 
     display: flex;
@@ -362,7 +354,7 @@ button {
     padding: 4px 19px;
     gap: 10px;
 
-    /* width: 173px; */
+
     height: 50px;
 
     /* Grey/Tint2 */
@@ -373,7 +365,7 @@ button {
     font-size: 17px;
 
     /* Inside auto layout */
-
+    
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -390,16 +382,16 @@ button {
 
 .special {
     box-sizing: border-box;
-
+    
     /* Auto layout */
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 4px 19px;
     gap: 10px;
 
-    /* width: 173px; */
+  
     height: 50px;
 
     /* Grey/Tint2 */
@@ -424,17 +416,18 @@ button {
 /* Informations */
 
 .info {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 10px;
 
-    /* width: 1340px; */
+
     height: 24px;
     padding-bottom: 37.5px;
     /* Inside auto layout */
-
+    
     flex: none;
     order: 3;
     align-self: stretch;
@@ -443,9 +436,9 @@ button {
 }
 
 .info p {
-    /* width: 1306px; */
+    
     height: 19px;
-
+    
     /* Information */
 
     font-family: 'Raleway';
@@ -466,52 +459,30 @@ button {
     flex-grow: 1;
 }
 
-.icon {
-    /* width: 24px; */
-    height: 24px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
 .grey-circle {
     box-sizing: border-box;
 
     position: relative;
-    /* width: 24px; */
+
     height: 24px;
     left: 0px;
     top: 0px;
-    margin-left: 3px;
     /* Grey/Tint2 */
-
-    border: 1px solid #D9D9D9;
-    border-radius: 25px;
-}
-
-.fa-solid.fa-info.fa-xs {
-    color: #0065FC;
-    position: relative;
-    padding: 0px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    color: #0065FC;
-    /* width: 4px; */
-    height: 10px;
+/* 
+border: 1px solid #D9D9D9;
+    border-radius: 25px; */
+    padding-bottom: 5px;
 }
 
 .cards {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 40px;
     height: 611.5px;
-
+    /* overflow: clip; */
+    flex-shrink: 3;
 
     /* Inside auto layout */
 
@@ -529,26 +500,26 @@ button {
     padding: 30px;
     gap: 30px;
 
-    /* width: 811px; */
-    /* height: 611.5px; */
-
+    
+    
+    
     /* Grey */
-
+    
     background: #F2F2F2;
     border-radius: 15px;
-
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 
 .HbgM h1 {
-    /* width: 811px; */
-    height: 26px;
 
+    height: 26px;
+    
     /* Title/Section */
 
     font-family: 'Raleway';
@@ -558,12 +529,12 @@ button {
     line-height: 26px;
 
     /* identical to box height */
-
+    
     margin: 0px;
     color: #000000;
-
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 0;
     align-self: stretch;
@@ -571,22 +542,22 @@ button {
 }
 
 .HbgM h3 {
-    /* width: 811px; */
+  
     height: 21px;
 
     /* Title/Filter */
-
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-
+    
     color: #000000;
-
-
+    
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 3;
     align-self: stretch;
@@ -603,13 +574,13 @@ button {
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     gap: 30px;
-
-    /* width: 811px; */
+    
+   
     height: 207.25px;
 
 
     /* Inside auto layout */
-
+    
     /* flex: none;
     order: 1;
     align-self: stretch;
@@ -626,28 +597,27 @@ button {
 
 
 
-.texte1 {
+.hebergement .texte {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
 
-    /* width: 250.33px; */
+
     height: 64.25px;
-
+    
 
     /* Inside auto layout */
     padding-left: 15px;
     flex: none;
     order: 1;
-    align-self: stretch;
+    /* align-self: stretch; */
     flex-grow: 0;
 }
 
-.texte1 h1 {
-    /* width: 220.33px; */
-    height: 19px;
+.texte h1 {
 
+    height: 19px;
+    white-space: initial;
     /* Card/Title */
 
     font-family: 'Raleway';
@@ -660,25 +630,25 @@ button {
     margin: 0px;
     /* padding-left: 15px; */
     color: #000000;
-
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
 }
 
-.texte1 h2 {
-    /* width: 220.33px; */
-    height: 16px;
+.texte h2 {
 
+    height: 16px;
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-
+    
     color: #000000;
     margin: 0px;
     /* Inside auto layout */
@@ -689,135 +659,18 @@ button {
     flex-grow: 0;
 }
 
-
-
-
-
-.texte2 {
+.texte {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-
-    /* width: 250.33px; */
+    
+    
     height: 64.25px;
-
+    
 
     /* Inside auto layout */
     padding-left: 15px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte2 h1 {
-    /* width: 220.33px; */
-    height: 19px;
-
-    /* Card/Title */
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-
-
-    /* padding-left: 15px; */
-    margin: 0px;
-    color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte2 h2 {
-    /* width: 220.33px; */
-    height: 16px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #000000;
-    /* padding-left: 15px; */
-    margin: 0px 0px 0px 0px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-
-.texte3 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-
-    /* width: 250.33px; */
-    height: 64.25px;
-
-
-    /* Inside auto layout */
-    padding-left: 15px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte3 h1 {
-    /* width: 220.33px; */
-    height: 19px;
-
-    /* Card/Title */
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-
-
-    color: #000000;
-    margin: 0px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte3 h2 {
-    /* width: 220.33px; */
-    height: 16px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #000000;
-    margin: 0px;
-    /* Inside auto layout */
-
     flex: none;
     order: 1;
     align-self: stretch;
@@ -833,230 +686,13 @@ button {
 .fa-solid.fa-star {
     padding: 0px;
     /* height: 13.25px;
-width: 14.29px; */
+    width: 14.29px; */
     color: #0065FC;
     /* margin-right: 2.38px; */
 }
 
 #grey-star.fa-solid.fa-star {
     color: #F2F2F2;
-}
-
-.container2 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
-/* 
-    width: 811px; */
-    height: 207.25px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte4 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-
-    /* width: 250.33px; */
-    height: 64.25px;
-
-
-    /* Inside auto layout */
-    padding-left: 15px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte4 h1 {
-    /* width: 220.33px; */
-    height: 19px;
-
-    /* Card/Title */
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-
-
-    /* padding-left: 15px; */
-    margin: 0px;
-    color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte4 h2 {
-    /* width: 220.33px; */
-    height: 16px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    color: #000000;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-
-
-.texte5 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-
-    /* width: 250.33px; */
-    height: 64.25px;
-
-
-    /* Inside auto layout */
-    padding-left: 15px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte5 h1 {
-    /* width: 220.33px; */
-    height: 19px;
-
-    /* Card/Title */
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: #000000;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte5 h2 {
-    /* width: 220.33px; */
-    height: 16px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    color: #000000;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte6 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-
-    /* width: 250.33px; */
-    height: 64.25px;
-
-
-    /* Inside auto layout */
-    padding-left: 15px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte6 h1 {
-    /* width: 220.33px; */
-    height: 19px;
-
-    /* Card/Title */
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-    margin: 0px;
-    margin-top: 4px;
-    /* margin-bottom: 8px; */
-    color: #000000;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte6 h2 {
-    /* width: 220.33px; */
-    height: 16px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-
-    color: #000000;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .stars {
@@ -1073,52 +709,13 @@ width: 14.29px; */
 }
 
 .pop {
-    /* display: flex; */
-    /* flex-direction: column;
-    align-items: flex-start; */
-
-    /* width: 811px; */
-    /* height: 611.5px; */
-
-    /* Grey */
-
     background: #F2F2F2;
     border-radius: 15px;
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1; */
-    
-    /* ajouts récents */
-
-    /* flex-direction: row;
-    align-items: flex-start;
-    padding: 0px; */
-    /* grid-template-rows: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    gap: 30px; */
-
-    /* width: 811px; */
-    /* height: 207.25px; */
-
-    /* ajouts récents */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px ;
     gap: 30px;
-
-    /* width: 811px;
-    height: 611.5px; */
-
-    /* Grey */
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     align-self: stretch;
@@ -1126,180 +723,88 @@ width: 14.29px; */
 }
 
 .title {
-    /* font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    width: 300.31px;
-    box-sizing: border-box; */
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* padding: 4px 19px; */
-    /* gap: 50.83px; */
-
-    /* width: 173px; */
+    justify-content: space-between;
     height: 26px;
-
-    /* Title/Section */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-
-    /* identical to box height */
-
     margin: 0px;
     color: #000000;
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
 }
 
-
-/* .fa-solid.fa-chart-line { */
-    /* position: relative;
-width: 18px;
-height: 15.75px; 
-padding-top: 0px;
-padding-left: 50.83px; */
-    /* position: relative; */
-/* padding: 0px;
-} */
-
-/* .populaire{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* display: grid; */
-    /* flex-direction: row;
+.populaire{
+    display: grid; 
     align-items: flex-start;
-    padding: 0px; */
-     grid-template-columns: 6fr;
+    padding: 0px; 
+    grid-template-columns: 6fr;
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     gap: 30px; 
+    width: 100%
+}
 
-    /* width: 811px; */
-    /* height: 207.25px;
-} */ 
-
-
-.card7 { 
-    /* width: 369px;
-    height: 144px; */
-
+.HbgPopulaires{ 
     background: #FFFFFF; 
-    /* Shadow/Card */
-
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px; 
-
-    /* Inside auto layout */
-
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0; 
-
-
-    /* ajouté, à voir si j'efface après */
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-
-
-
-    /* Inside auto layout */
-    padding-left: 15px;
     flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;  
- } 
-.card7 img{
-    float: left;
 } 
 
-.texte7 {
+.HbgPopulaires .texte {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 5px 5px 15px;
-    gap: 24px;
-
-  
-    /* width: 246px; */
-    /* height: 134px;
-    left: 123px;
-    top: 5px;  
-
-    /* ajouts récents */
-    /* ce qui etait mis */
-     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    padding: 5px 0px 5px 0px; 
- /* ce qui etait mis */
-    /* width: 250.33px; */
-    /* height: 64.25px; */
-
-
-    /* Inside auto layout */
-    /* ce qui etait mis */
-    /* padding-left: 15px; */
-    /* ce qui etait mis */
-    /* flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0; */
-
+    padding: 5px 0px 5px 15px; 
 } 
 
-
-
-  .infosp7 {
+.texte .infos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 5px 0px 0px;
+    padding: 10px 5px 0px 0px;
     gap: 5px;
 
     height: 83px;  
 
-
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 1; 
+    /* flex-grow: 1;  */
 }   
 
- .infosp7 h1 { 
+.infos h1 { 
     /* width: 226px; */
     height: 19px;
-
+    
     /* Card/Title */
-
-     font-family: 'Raleway';
+    
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     /* identical to box height */
-
 
     color: #000000; 
 
@@ -1312,18 +817,18 @@ padding-left: 50.83px; */
     flex-grow: 0; 
 }  
 
-.infosp7 h2 { 
+.infos h2 { 
     height: 16px;
-
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-
+    
     color: #000000; 
-
-
+    
+    
     /* Inside auto layout */
 
      flex: none;
@@ -1332,237 +837,13 @@ padding-left: 50.83px; */
     flex-grow: 0;
 } 
 
-/* #card8 { */
-    /* width: 369px; */
-    /* height: 144px;
-
-    background: #FFFFFF; */
-    /* Shadow/Card */
-
-    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 20px; */
-
-    /* Inside auto layout */
-/* 
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-} */
-
-/* #card8 img {
-    box-sizing: border-box;
-
-    position: relative; */
-    /* width: 123px; */
-    /* height: 144px;
-    left: 0px;
-    top: 0px; */
-
-    /* background: url(emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); */
-    /* White */
-/* } */
-
-/* .texte8 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 5px 5px 15px;
-    gap: 24px;
-
-    position: relative; */
-    /* width: 246px; */
-    /* height: 134px;
-    left: 123px;
-    top: 5px;
-} */
-
-/* .infosp8 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 5px;
-
-    /* width: 226px; */
-    /* height: 83px; */
-
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1; */
-/* }  */
-
-/* .infosp8 h1 { */
-    /* width: 226px; */
-    /* height: 19px; */
-
-    /* Card/Title */
-
-    /* font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px; */
-    /* identical to box height */
-
-
-    /* color: #000000; */
-
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-} */
-
-/* .infosp8 h2 { */
-    /* width: 226px; */
-    /* height: 16px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #000000; */
-
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-} */
-
-/* #card9 { */
-    /* width: 369px; */
-    /* height: 144px;
-
-    background: #FFFFFF; */
-    /* Shadow/Card */
-
-    /* box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 20px; */
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-} */
-/* 
-#card9 img {
-    box-sizing: border-box;
-
-    position: relative; */
-    /* width: 123px; */
-    /* height: 144px;
-    left: 0px;
-    top: 0px; */
-
-    /* background: url(emile-guillemot-Bj_rcSC5XfE-unsplash.jpg); */
-    /* White */
-
-/* } */
-/* 
-.texte9 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 5px 5px 15px;
-    gap: 24px;
-
-    position: relative; */
-    /* width: 246px; */
-    /* height: 134px;
-    left: 123px;
-    top: 5px;
-} */
-
-/* .infosp9 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 5px; */
-
-    /* width: 226px; */
-    /* height: 83px; */
-
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1;
-} */
-
-/* .infosp9 h1 { */
-    /* width: 226px; */
-    /* height: 19px; */
-
-    /* Card/Title */
-
-    /* font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px; */
-    /* identical to box height */
-
-/* 
-    color: #000000; */
-
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-} */
-
-/* .infosp9 h2 { */
-    /* width: 226px; */
-    /* height: 16px;
-
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-
-    color: #000000; */
-
-
-    /* Inside auto layout */
-
-    /* flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-} */
-
 .container4 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* padding: 30px; */
-    gap: 30px;
     padding-top: 30px;
-    /* width: 1340px; */
     height: 559.02px;
-
+    padding: 30px;
 
     /* Inside auto layout */
 
@@ -1573,9 +854,9 @@ padding-left: 50.83px; */
 }
 
 .container4 h1 {
-    /* width: 1280px; */
+    
     height: 30.02px;
-
+    
     /* Title/Section */
 
     font-family: 'Raleway';
@@ -1583,16 +864,17 @@ padding-left: 50.83px; */
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-
+    padding-bottom: 30px;
     color: #000000;
-
-
+    
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+    
 }
 
 .lieux {
@@ -1602,12 +884,12 @@ padding-left: 50.83px; */
     padding: 0px;
     gap: 30px; */
 
-    /* width: 1280px; */
+    
     /* height: 439px; */
-
-
+    
+    
     /* Inside auto layout */
-
+    
     /* flex: none;
     order: 1;
     align-self: stretch;
@@ -1619,56 +901,44 @@ padding-left: 50.83px; */
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(100px, auto);
     gap: 30px;
+    /* padding-top: 30px; */
+    
     /* margin-right: 20px; */
 
 }
 
-#card10 {
+.visite {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* justify-content: flex-end;
     align-items: center;
-    padding: 0px;
-
-    /* width: 297.5px; */
-    height: 439px;
-
+    padding: 0px; */
+    
+    
+    /* height: 439px; */
+    
     /* Shadow/Card */
 
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 20px;
+    /* border-radius: 20px; */
 
     /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    flex-grow: 1;
+    /* flex: none; */
+    /* order: 0;
+    flex-grow: 1; */
 }
 
-#card10 img {
-    /* width: 297.5px; */
-    height: 380px;
 
-    /* background: url(reno-laithienne.jpg); */
-    border-radius: 20px 20px 0px 0px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte10 {
+.visite .nom {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: flex-start;
-    padding: 20px 19px;
-    gap: 10px;
+    /* padding: 20px 19px;
+    gap: 10px; */
 
-    /* width: 297.5px; */
+   
     height: 59px;
 
     /* White */
@@ -1678,13 +948,13 @@ padding-left: 50.83px; */
 
     /* Inside auto layout */
 
-    flex: none;
+    /* flex: none;
     order: 1;
     align-self: stretch;
-    flex-grow: 0;
+    flex-grow: 0; */
 }
 
-.texte10 h1 {
+.nom h1 {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -1692,279 +962,32 @@ padding-left: 50.83px; */
     line-height: 19px;
     /* identical to box height */
 
-
-    color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-#card11 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px;
-
-    /* width: 297.5px; */
-    height: 439px;
-
-    /* Shadow/Card */
-
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 20px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-}
-
-#card11 img {
-    /* width: 297.5px; */
-    height: 380px;
-
-    background: url(reno-laithienne.jpg);
-    border-radius: 20px 20px 0px 0px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte11 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     padding: 20px 19px;
-    gap: 10px;
-
-    /* width: 297.5px; */
-    height: 59px;
-
-    /* White */
-
-    background: #FFFFFF;
-    border-radius: 0px 0px 20px 20px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte11 h1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-
-
     color: #000000;
 
 
     /* Inside auto layout */
 
-    flex: none;
+    /* flex: none;
     order: 0;
     align-self: stretch;
-    flex-grow: 0;
-}
-
-#card12 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px;
-
-    /* width: 297.5px; */
-    height: 439px;
-
-    /* Shadow/Card */
-
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 20px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-}
-
-#card12 img {
-    /* width: 297.5px; */
-    height: 380px;
-
-    background: url(reno-laithienne.jpg);
-    border-radius: 20px 20px 0px 0px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte12 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px 19px;
-    gap: 10px;
-
-    /* width: 297.5px; */
-    height: 59px;
-
-    /* White */
-
-    background: #FFFFFF;
-    border-radius: 0px 0px 20px 20px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte12 h1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-
-
-    color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-#card13 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px;
-
-    /* width: 297.5px; */
-    height: 439px;
-
-    /* Shadow/Card */
-
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    border-radius: 20px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-}
-
-#card13 img {
-    /* width: 297.5px; */
-    height: 380px;
-
-    background: url(reno-laithienne.jpg);
-    border-radius: 20px 20px 0px 0px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte13 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px 19px;
-    gap: 10px;
-
-    /* width: 297.5px; */
-    height: 59px;
-
-    /* White */
-
-    background: #FFFFFF;
-    border-radius: 0px 0px 20px 20px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
-.texte13 h1 {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
-
-
-    color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+    flex-grow: 0; */
 }
 
 .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-
-    /* width: 1340px; */
-    height: 163px;
-
-    /* Grey */
-
     background: #F2F2F2;
 
     /* Inside auto layout */
-    flex: none;
-    order: 3;
-    /* align-self: stretch; */
-    flex-grow: 0;
+    /* flex: none;
+    order: 3; */
+    align-self: stretch;
+    /* flex-grow: 0; */
+    margin: 0px 50px;
+    /*choses ajoutées*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .propos {
@@ -1974,8 +997,8 @@ padding-left: 50.83px; */
     padding: 20px ;
     gap: 15px;
 
-    /* width: 446.67px; */
-    height: 163px;
+
+    /* height: 163px; */
 
 
     /* Inside auto layout */
@@ -1984,10 +1007,12 @@ padding-left: 50.83px; */
     order: 0;
     align-self: stretch;
     flex-grow: 1;
+
+   
 }
 
 .propos h1 {
-    /* width: 77px; */
+
     height: 21px;
 
     /* Title/Filter */
@@ -2009,7 +1034,7 @@ padding-left: 50.83px; */
 }
 
 .propos h2 {
-    /* width: 176px; */
+ 
     height: 19px;
 
     /* Footer/Link */
@@ -2033,7 +1058,7 @@ padding-left: 50.83px; */
 }
 
 .propos h3 {
-    /* width: 157px; */
+  
     height: 19px;
 
     /* Footer/Link */
@@ -2045,37 +1070,37 @@ padding-left: 50.83px; */
     line-height: 19px;
     /* identical to box height */
 
-
+    
     color: #000000;
-
-
+    
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 2;
     flex-grow: 0;
-
+    
 }
 
 .propos h4 {
-    /* width: 194px; */
+    
     height: 19px;
-
+    
     /* Footer/Link */
-
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     /* identical to box height */
-
-
+    
+    
     color: #000000;
-
-
+    
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 3;
     flex-grow: 0;
@@ -2088,9 +1113,7 @@ padding-left: 50.83px; */
     padding: 20px;
     gap: 15px;
 
-    /* width: 446.67px; */
-    height: 163px;
-
+  
 
     /* Inside auto layout */
 
@@ -2101,19 +1124,19 @@ padding-left: 50.83px; */
 }
 
 .hebergements h1 {
-    /* width: 165px; */
+
     height: 21px;
-
+    
     /* Title/Filter */
-
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-
+    
     color: #000000;
-
+    
 
     /* Inside auto layout */
 
@@ -2123,9 +1146,9 @@ padding-left: 50.83px; */
 }
 
 .hebergements h2 {
-    /* width: 104px; */
+    
     height: 19px;
-
+    
     /* Footer/Link */
 
     font-family: 'Raleway';
@@ -2137,21 +1160,21 @@ padding-left: 50.83px; */
 
 
     color: #000000;
-
-
+    
+    
     /* Inside auto layout */
-
+    
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 .hebergements h3 {
-    /* width: 150px; */
+    
     height: 19px;
-
+    
     /* Footer/Link */
-
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -2174,11 +1197,11 @@ padding-left: 50.83px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 0px;
+    padding: 20px;
     gap: 15px;
 
-    /* width: 446.67px; */
-    height: 163px;
+   
+    /* height: 163px; */
 
 
     /* Inside auto layout */
@@ -2190,7 +1213,7 @@ padding-left: 50.83px; */
 }
 
 .assistance h1 {
-    /* width: 93px; */
+   
     height: 21px;
 
     /* Title/Filter */
@@ -2199,8 +1222,8 @@ padding-left: 50.83px; */
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
-
+    line-height: 21.13px;
+    
     color: #000000;
 
 
@@ -2212,9 +1235,9 @@ padding-left: 50.83px; */
 }
 
 .assistance h2 {
-    /* width: 97px; */
+    
     height: 19px;
-
+    
     /* Footer/Link */
 
     font-family: 'Raleway';
@@ -2229,28 +1252,28 @@ padding-left: 50.83px; */
 
 
     /* Inside auto layout */
-
+    
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
 .assistance h3 {
-    /* width: 114px; */
+   
     height: 19px;
-
+    
     /* Footer/Link */
-
+    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 18.78px;
     /* identical to box height */
 
 
     color: #000000;
-
+    
 
     /* Inside auto layout */
 
@@ -2258,3 +1281,43 @@ padding-left: 50.83px; */
     order: 2;
     flex-grow: 0;
 }
+
+
+
+@media (min-width: 1900px ) {
+
+body{
+    margin: 0px 230px;
+    }
+}
+
+/* @media (min-width: 1024px ) {
+.cards{
+    flex-direction: column;
+}
+
+.populaire{
+    grid-template-columns: repeat(3,1fr);
+    }
+} */
+
+/* @media (max-width: 375px ) {
+nav{
+    flex-direction: column;
+    }
+
+.btnA{
+    border-bottom: 2px transparent;
+}    
+
+.btnH{
+    border-bottom: 2px transparent;
+}
+.btnA:hover{
+    border-bottom: 2px #0065FC solid;
+}
+
+.btnH:hover{
+    border-bottom: 2px #0065FC solid;
+}
+}  */
