@@ -230,7 +230,6 @@ button {
     /* height: 21px; */
 
     /* Title/Filter */
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -528,7 +527,7 @@ border: 1px solid #D9D9D9;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-
+    padding-bottom: 8px;
     /* identical to box height */
 
     margin: 0px;
@@ -590,10 +589,9 @@ border: 1px solid #D9D9D9;
 
 .hebergement {
     background: #FFFFFF;
-    /* Shadow/Card */
-
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    height: 207px;
 }
 
 
@@ -650,7 +648,7 @@ border: 1px solid #D9D9D9;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-
+    padding-bottom: 8px;
     color: #000000;
     margin: 0px;
     /* Inside auto layout */
@@ -661,7 +659,7 @@ border: 1px solid #D9D9D9;
     flex-grow: 0;
 }
 
-.texte {
+/* .texte {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -669,15 +667,15 @@ border: 1px solid #D9D9D9;
 
 
     height: 64.25px;
-
+ */
 
     /* Inside auto layout */
-    padding-left: 15px;
+    /* padding-left: 15px;
     flex: none;
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-}
+} */
 
 .icon {
     /* width: 14.29px; */
@@ -801,7 +799,7 @@ border: 1px solid #D9D9D9;
     overflow-wrap: break-word;
 }
 
-.infos h1 {
+.pop .infos h1 {
     /* width: 226px; */
     height: 19px;
 
@@ -987,19 +985,11 @@ border: 1px solid #D9D9D9;
     flex-grow: 0; */
 }
 
-.footer {
+footer {
     background: #F2F2F2;
-
-    /* Inside auto layout */
-    /* flex: none;
-    order: 3; */
     align-self: stretch;
-    /* flex-grow: 0; */
     margin: 0px 50px;
-    /*choses ajoutées*/
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
@@ -1355,6 +1345,31 @@ main{
     border-bottom: 2px #0065FC solid;
 }
 
+.filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.filter-bar .price {
+   width: 50%;
+   font-size: 14px;
+}
+
+.filter-bar .number{
+    width: 50%;
+    font-size: 14px;
+}
+
+.filter-bar .type{
+    width: 50%;
+    font-size: 14px;
+}
+
+.filter-bar .special{
+    width: 50%;
+    font-size: 14px;
+}
+
 .info p{
     width: 100%;
 }
@@ -1371,14 +1386,8 @@ main{
 }
 
 footer{
-    background: #F2F2F2;
-    align-self: stretch;
-    /* flex-grow: 0; */
-    margin: 0px 50px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    margin: 0;
 }
 }
-} 
+ 
