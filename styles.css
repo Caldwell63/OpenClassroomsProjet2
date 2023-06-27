@@ -9,14 +9,16 @@ body {
 
 header {
     height: 79px;
-    padding: 0px 50px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px 30px 30px 0px;
+    padding: 30px 30px 30px 20px;
 }
 
 nav {
@@ -31,16 +33,15 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
-    gap: 68px;
-    height: 35px;
+    /* align-items: flex-end; */
+    /* gap: 68px; */
+    height: 100%;
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 
 .btnH {
-    margin-right: 15px;
     border-top: 2px transparent;
     text-decoration: none;
     color: black;
@@ -49,7 +50,6 @@ nav {
     flex: none;
     order: 0;
     flex-grow: 0;
-    border-top: 2px transparent;
 }
 
 .btnA {
@@ -61,6 +61,7 @@ nav {
     flex: none;
     order: 1;
     flex-grow: 0;
+    padding-left: 65px;
 }
 
 .btnH:hover {
@@ -177,7 +178,7 @@ button {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+    text-align: left;
     color: #000000;
     flex: none;
     order: 0;
@@ -319,7 +320,6 @@ button {
     padding: 0px;
     gap: 10px;
     height: 24px;
-    padding-bottom: 37.5px;
     flex: none;
     order: 3;
     align-self: stretch;
@@ -347,6 +347,10 @@ button {
     left: 0px;
     top: 0px;
     padding-bottom: 5px;
+}
+
+.wrapper-cards{
+    margin: 35px 50px;
 }
 
 .cards {
@@ -421,6 +425,10 @@ button {
 }
 
 .hebergement img{
+    height: 124px;
+    /* border: 20px white; */
+    /* align-self: start; */
+    align-content: stretch;
     width: 100%;
 }
 
@@ -428,16 +436,16 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 64.25px;
-    padding-left: 15px;
+    gap: 8px;
+    padding: 0px 15px 15px;
     flex: none;
     order: 1;
     flex-grow: 0;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
 
 .hebergement .texte h2 {
-    height: 19px;
     white-space: initial;
     font-family: 'Raleway';
     font-style: normal;
@@ -484,8 +492,6 @@ button {
 
 .stars {
     display: flex;
-    justify-content: flex-start;
-    height: 13.25px;
     flex: none;
     order: 2;
     flex-grow: 0;
@@ -499,6 +505,7 @@ button {
     align-items: flex-start;
     padding: 30px;
     gap: 30px;
+    align-self: stretch;
 }
 
 .title {
@@ -564,6 +571,9 @@ button {
 .HbgPopulaires img{
     width: 25%;
     border-radius: 1rem 0 0 1rem;
+    height: 144px;
+    object-fit: cover;
+    width: 123px;
 }
 
 .texte .infos {
@@ -572,7 +582,6 @@ button {
     align-items: flex-start;
     padding: 10px 5px 0px 0px;
     gap: 5px;
-    height: 83px;
     flex: none;
     order: 0;
     align-self: stretch;
@@ -589,12 +598,11 @@ button {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 
 .infos h2 {
-    height: 16px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
@@ -658,7 +666,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 59px;
     background: #FFFFFF;
     border-radius: 0px 0px 20px 20px;
 }
@@ -853,38 +860,90 @@ footer {
     } 
 }  
 
- @media (max-width: 1024px ) {
-main{
-    margin-left: 30px;
+@media only screen and (min-width: 1025px) and (max-width:1899px){
+.HbgM{
+    width: auto;
+    align-self: stretch;
+    flex: auto;
+}
+
+
+
+/* .HbgM h1{
+    padding-bottom: 0;
+} */
+.wrapper-places{
+    margin: 0 50px;
+}
+}  
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+.logo{
+    align-items: center;
+    padding: 30px;
+}
+
+nav{
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.btn{
+    justify-content: space-evenly;
+}
+
+.filter-bar{
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.wrapper-main{
+    padding-top: 30px;
 }
 
 .cards{
     flex-direction: column;
-    margin: 20px;
 }
+
 .pop{
  align-self: stretch;
 }
 
+/* .wrapper-cards{
+    margin: 50px;
+} */
+
 .HbgPopulaires img{
-    width: 25%;
+    width: 33%;
     height: auto;
     object-fit: cover;
-
 }
 
+.HbgPopulaires .texte{
+    padding: 10px 5px 46px 15px;
+}
 
+.texte .infos{
+    padding: 0px;
+}
 .populaire{
     grid-template-columns: repeat(3,1fr);
     }
+
+.wrapper-places{
+    margin: 50px 50px 0px 50px;
+}
 
 .lieux{   
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(50px, auto);
     gap: 30px;
-    height: 150px;
-    margin: 30px;
+}
+
+.visite img{
+    height: 200px;
 }
 
 .container4{
@@ -892,13 +951,14 @@ main{
 }
 
 footer{
-    margin: 0;
+    margin: 0px 50px;
 }
 }
 
-@media (max-width: 375px ) {
+@media only screen and (max-width: 767px ) {
 header{
     padding: 0;
+    flex-direction: column;
 }
 
 .logo{
@@ -909,6 +969,10 @@ nav{
     flex-direction: column;
     align-items: stretch;
     }
+
+.wrapper-main{
+    padding-top: 30px;
+} 
 
 main{    
     margin: 30px;
@@ -926,10 +990,12 @@ main{
 }
 .btnA:hover{
     border-bottom: 2px #0065FC solid;
+    border-top: none;
 }
 
 .btnH:hover{
     border-bottom: 2px #0065FC solid;
+    border-top: none;
 }
 
 .btnR button{
@@ -950,7 +1016,7 @@ main{
 
 .filter-bar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .filters{
@@ -979,16 +1045,28 @@ main{
     width: 100%;
 }
 
+.wrapper-cards{
+    margin: 0;
+}
+.cards{
+    flex-direction: column;
+}
+
 .HbgM{
     order: 1;
     padding: 20px;
     background-color: transparent;
 }
 
+.HbgPopulaires img{
+    height: 146px;
+}
+
 .pop{
     order: 0;
-    /* width: 100%; */
     border-radius: 0;
+    padding: 20px;
+    align-self: stretch;
 }
 .container{
     grid-template-columns: none;
@@ -998,14 +1076,16 @@ main{
     grid-template-columns: none;
 }
 
+.container4{
+    align-items: normal;
+}
 .lieux{
     grid-template-columns: none;
 }
 
 .visite img{
-    width: 315px;
     height: 141px;
-}
+} 
 
 footer{
     flex-direction: column;
