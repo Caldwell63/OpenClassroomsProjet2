@@ -17,7 +17,6 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 1440px;
 }
 
 .main-container {
@@ -616,14 +615,14 @@ ul{
 /****** Media queries ***********/
 
 /* Large desktop */
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1440px) {
     body {
         margin: 0px 230px; 
     } 
 }  
 
 /* Desktop */
-@media only screen and (min-width: 1025px) and (max-width:1899px){
+@media only screen and (min-width: 1025px) and (max-width:1439px){
     .HbgM{
         width: auto;
         align-self: stretch;
