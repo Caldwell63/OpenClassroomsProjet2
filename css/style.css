@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 1440px;
 }
 
 .main-container {
@@ -464,15 +465,19 @@ button {
 
 /****** Hebergements ***********/
 
-.hebergements h1{
+#hebergements h1{
     padding-bottom: 30px;
 }
 
-section.hebergements .container{
+#hebergements a{
+    text-decoration: none;
+}
+
+section#hebergements .container{
     padding-bottom: 30px;
 }
 
-.hebergements .card-rating{
+#hebergements .card-rating{
     order: 2;
 }
 
@@ -497,9 +502,6 @@ section.hebergements .container{
     gap: 30px;
 }
 
-.populaires-cards .card {
-    display: flex;
-}
 
 .populaires-cards img {
     width: 33%;
@@ -531,14 +533,20 @@ section.hebergements .container{
     order: 2;
 }
 
-.container4 {
+.populaires-cards article.card a{
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+}
+
+#activites {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 30px;
 }
 
-.container4 h1 {
+#activites h1 {
     height: 30.02px;
     font-size: 22px;
     padding-bottom: 30px;
@@ -801,7 +809,7 @@ nav{
 .filters{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    justify-content: space-around;
 }
 
 .filter-bar .price {
